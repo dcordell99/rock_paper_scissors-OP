@@ -13,7 +13,19 @@ const computerPlay = () => {
 };
 
 const playerGuess = () => {
-	return prompt('Rock, paper or scissors?').toLowerCase();
+	let guess;
+	let isWrongAnswer = true;
+	while (isWrongAnswer) {
+		guess = prompt('Rock, paper or scissors?').toLowerCase();
+		if (guess === 'rock' || guess === 'paper' || guess === 'scissors') {
+			isWrongAnswer = false;
+		} else {
+			alert(
+				'Incorrect Response. Correct guesses are "rock", "paper" or "scissors".'
+			);
+		}
+	}
+	return guess;
 };
 
 function playRound(playerSelection, computerSelection) {
