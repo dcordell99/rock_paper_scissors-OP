@@ -5,10 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Rock, Paper Scissors</title>
+  <title>Rock -- Paper -- Scissors</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Rock - Paper - Scissors</h1>
+    <div class="choice_wrapper">
+      <a class="btn-choice" id="rock" href="#">Rock</a>
+      <a class="btn-choice" id="paper" href="#">Paper</a>
+      <a class="btn-choice" id="scissors" href="#">Scissors</a>
+    </div>
+    <div id="round_won">&nbsp;</div>
+    <div class="wins-wrapper">
+      <div class="player-wins-wrapper">
+        <h3>Player Wins</h3>
+        <h4 class="player-wins">0</h4>
+      </div>
+      <div class="computer-wins-wrapper">
+        <h3>Computer Wins</h3>
+        <h4 class="computer-wins">0</h4>
+      </div>
+    </div>
+    <div class="game_won_wrapper">
+      <div id="game_won">&nbsp;</div>
+      <a class="btn-new_game" href="">New Game</a>
+    </div>
+  </div>
 </body>
 <script type="text/javascript" src="script.js"></script>
 </html>
